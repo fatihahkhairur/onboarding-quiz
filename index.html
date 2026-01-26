@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Kind of New Hire Are You?</title>
     <link rel="stylesheet" href="style.css">  <!-- link css file. type link:css -->
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Londrina+Shadow&family=Road+Rage&display=swap" rel="stylesheet">
 <body>
     <div class="quiz-wrapper">
         <div class="container">
             <!-- start screen -->
             <section class="screen active" id="start-screen">
                 <header class="screen-header">
-               .p2/
-     <h2 class="subtitle">See how you'll roll on Day 1!</h2> 
+                    <h2 class="subtitle">See how you'll roll on Day 1!</h2> 
                     <h1>What Type of New Hire <br> Are You?</h1> 
                     <div class="animation-container">  
                         <img id="start-thumbnail" src="images/start.png" alt="character illustration">
@@ -55,8 +56,11 @@
             <!-- result -->
             <section class="screen" id="result-screen">
                 <div class="result-info">
-                    <h1 class="score-display">You scored <span id="final-score">0</span> out of <span id="max-score">5</span></h1>
                     <h2 id="result-title">Smooth Starter!</h2>
+                    <div class="animation-container">  
+                        <img id="start-thumbnail" src="images/result.png" alt="character illustration">
+                    </div>
+                    <h1 class="score-display">You scored <span id="final-score">0</span> out of <span id="max-score">5</span></h1>
                     <p id="result-message">You understand the vibes. You’re here to learn, adapt, and grow.<br>Strong first-week energy.</p>
                 </div>
             </section>    
@@ -65,8 +69,7 @@
          <!-- Buttons OUTSIDE the white container -->    
         <div class="button-container">        
             <button id="start-btn" class="btn-primary">Take the Test!</button>        
-            <button id="restart-btn" class="btn-primary" style="display: none;">Restart Quiz</button>    
-        </div>
+            <button id="restart-btn" class="btn-primary" style="display: none;">Level up & try again</div>
     </div>
     
     <script src="script.js"></script> <!-- link JS file -->

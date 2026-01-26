@@ -196,11 +196,11 @@ function showResults() {
   if (percentage === 100) {
     resultTitle.textContent = "Smooth Starter!";
     resultMessage.textContent =
-    "You understand the vibes. You’re here to learn, adapt, and grow. Strong first-week energy.";
+    "You understand the vibes! First weeks are for learning and observing.";
   } else if (percentage >= 80) {
     resultTitle.textContent = "Settling In Nicely!";
     resultMessage.textContent =
-    "You’ve got the basics down. Give yourself time because you’re doing better than you think.";
+    "Looking good! A few questions here and there, but that’s totally fine.";
   } else if (percentage >= 60) {
     resultTitle.textContent = "Classic New Hire!";
     resultMessage.textContent =
@@ -212,7 +212,7 @@ function showResults() {
   } else {
     resultTitle.textContent = "First-Week Overwhelm Club!";
     resultMessage.textContent =
-    "You’re not alone. Every confident employee was once here too.";
+    "Deep breath. Every confident employee once felt this way. You’re not alone.";
   }
 }
 
