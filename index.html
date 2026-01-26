@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Kind of New Hire Are You?</title>
+    <link rel="stylesheet" href="style.css">  <!-- link css file. type link:css -->
+</head>
+<body>
+    <div class="quiz-wrapper">
+        <div class="container">
+            <!-- start screen -->
+            <section class="screen active" id="start-screen">
+                <header class="screen-header">
+                    <h2 class="subtitle">See how you'll roll on Day 1!</h2> 
+                    <h1>What Type of New Hire <br> Are You?</h1> 
+                    <div class="animation-container">  
+                        <img id="start-thumbnail" src="images/start.png" alt="character illustration">
+                    </div>
+                    <p class="author">Made by fatihahkhairur</p>   
+                </header>
+                <!-- <button id="start-btn">Start the Test!</button> -->
+            </section>
+
+            <!-- quizzes -->
+            <section class="screen" id="quiz-screen">
+                <!-- progress bar -->
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+
+                <!-- scoreboard -->
+                <div class="quiz-info">
+                    <p>Question <span id="current-question">1</span> of <span id="total-questions">5</span></p>
+                    <p>Score: <span id="score">0</span></p>
+                </div>
+
+                <!-- animation -->
+                <div class="animation-container">    
+                    <img id="quiz-animation" src="placeholder.svg" alt="Quiz illustration">
+                </div>
+
+                <!-- question -->
+                <div class="quiz-header">
+                    <h3 id="question-text">question goes here</h3>
+                </div>
+
+                <!-- answer -->
+                <div id="answers-container" class="answers-container">
+                    <!-- Answer buttons will be inserted here from our JS code later -->
+                </div>
+            </section>
+
+            <!-- result -->
+            <section class="screen" id="result-screen">
+                <div class="result-info">
+                    <h1 class="score-display">You scored <span id="final-score">0</span> out of <span id="max-score">5</span></h1>
+                    <h2 id="result-title">Smooth Starter!</h2>
+                    <p id="result-message">You understand the vibes. You’re here to learn, adapt, and grow.<br>Strong first-week energy.</p>
+                </div>
+            </section>    
+        </div>    
+
+         <!-- Buttons OUTSIDE the white container -->    
+        <div class="button-container">        
+            <button id="start-btn" class="btn-primary">Take the Test!</button>        
+            <button id="restart-btn" class="btn-primary" style="display: none;">Restart Quiz</button>    
+        </div>
+    </div>
+    
+    <script src="script.js"></script> <!-- link JS file -->
+</body>
+</html>
