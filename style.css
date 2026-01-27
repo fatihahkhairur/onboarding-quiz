@@ -165,6 +165,7 @@ body {
     height: 100%; 
     max-height: 400px;   
     animation: float 3s ease-in-out infinite;
+    transition: all 0.3s ease; 
     margin: 20px;  
 }
 
