@@ -73,10 +73,10 @@ body {
 }
 
 .screen-header h1 {    
-    font-family: "Road Rage", sans-serif;
+    font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;    
+    font-size: 4rem;    
     color: #018abe;    
     line-height: 0.8;
     margin-bottom: 10px;  
@@ -124,8 +124,8 @@ body {
     background: #c8eef7;    
     height: 10px;    
     border-radius: 5px;    
-    overflow: hidden;    
-    margin-top: 20px;
+    overflow: hidden;  
+    margin-top: 10px;  
 }
 
 .progress {    
@@ -193,7 +193,7 @@ body {
     display: flex;    
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .answer-btn {    
@@ -248,10 +248,10 @@ body {
 }
 
 #result-title {    /* Smooth Starter! */ 
-    font-family: "Road Rage", sans-serif;
+    font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;      
+    font-size: 4rem;      
     color: #018abe;    
     margin-bottom:10px;
     font-weight: 500;
