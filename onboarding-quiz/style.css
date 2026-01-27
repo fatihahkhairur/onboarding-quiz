@@ -1,0 +1,265 @@
+/* Container & Base Styles */
+
+* {    
+    margin: 0;    
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: "Google Sans", sans-serif; 
+    background: linear-gradient(135deg, #9be7ea 10%, #c8eef7 90%);    
+    min-height: 100vh;    
+    display: flex;    
+    align-items: center;    
+    justify-content: center;    
+    padding: 20px;
+}
+
+
+/* Wrapper for entire quiz */
+.quiz-wrapper {    
+    max-width: 600px;    
+    width: 100%;    
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;    
+    gap: 50px;
+}
+
+
+/* White container */
+.container {    
+    max-width: 600px;    
+    width: 100%;    
+    background: white;    
+    border-radius: 40px;    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);    
+    overflow: hidden;    
+    position: relative;
+}
+
+
+/* Screen Management */
+.screen.active {    
+    display: block;
+}
+
+.screen {    
+    display: none;    
+    padding: 40px;    
+    animation: fadeIn 0.5s ease-in;
+    text-align: left;
+}
+
+@keyframes float {    
+    0%, 100% { transform: translateY(0); }    
+    50% { transform: translateY(-10px); }
+}
+
+
+/* Start Screen */
+#start-screen {    
+    text-align: center;
+}
+
+.screen-header .subtitle {   
+    font-size: 1rem;  
+    margin-bottom: 20px;   
+    font-weight: 400;
+    line-height: 1.5;
+    color: #808086;    
+
+}
+
+.screen-header h1 {    
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5rem;    
+    color: #018abe;    
+    line-height: 0.8;
+    margin-bottom: 10px;  
+}
+
+.screen-header .author { 
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;   
+    color: #999;    
+    font-size: 0.8rem;    
+}
+
+
+/* Button Container - OUTSIDE white box */
+.button-container {    
+    width: 100%;    
+    display: flex;    
+    justify-content: center;    
+    margin-top: -10px; /* Pull button slightly closer to container */
+}
+
+
+/* Buttons */
+.btn-primary {    
+    font-family: "Google Sans", sans-serif;
+    background-color: #02457a;   
+    color: white;    
+    border: none;    
+    padding: 15px 30px;    
+    font-size: 1rem;   
+    font-weight: 480;     
+    border-radius: 10px;    
+    cursor: pointer;    
+    transition: background-color 0.3s ease;  
+}
+
+.btn-primary:hover {    
+    background-color: #018abe;
+}
+
+
+/* Progress Bar */
+.progress-bar {    
+    background: #c8eef7;    
+    height: 10px;    
+    border-radius: 5px;    
+    overflow: hidden;    
+    margin-top: 20px;
+}
+
+.progress {    
+    height: 100%;    
+    background-color: #018abe; 
+    width: 0%;    
+    transition: width 0.3s ease;
+}
+
+
+/* Quiz Info */
+.quiz-info {    
+    display: flex;    
+    justify-content: space-between;    
+    margin-bottom: 10px;    
+    padding: 15px;    
+    border-radius: 10px;
+}
+
+.quiz-info p {    
+    font-weight: 400;    
+    color: #666;
+}
+
+.quiz-info span {    /* highlight score */
+    color: #018abe;
+}
+
+
+/* Animation Container */
+.animation-container {    
+    text-align: center;    
+}
+
+.animation-container img {    
+    max-width: 250px;    
+    height: 100%; 
+    max-height: 400px;   
+    animation: float 3s ease-in-out infinite;
+    margin: 20px;  
+}
+
+/* @keyframes float {    
+    0%, 100% { transform: translateY(0); }    
+    50% { transform: translateY(-10px); }
+} */
+
+
+/* Question */
+.quiz-header {    
+    margin-bottom: 2rem;
+}
+
+#question-text { 
+    font-size: 1.2rem;    
+    color: #333;    
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+/* Answers */
+.answers-container {    
+    display: flex;    
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.answer-btn {    
+    font-family: "Google Sans", sans-serif;
+    background: white;  
+    color: #333;  
+    border: 2px solid #e0e0e0;    
+    padding: 18px 24px;    /* 1rem */
+    border-radius: 10px;    
+    font-size: 1rem; 
+    cursor: pointer;    
+    transition: all 0.3s ease;   
+    text-align: left;    
+    /* font-weight: 500; */
+}
+
+.answer-btn:hover {    
+    border-color: #018abe;    
+    background: #c8eef7;    
+}
+
+.answer-btn.correct {    
+    background: #d4edda;    
+    border-color: #28a745;    
+    color: #155724;
+}
+
+.answer-btn.incorrect {    
+    background: #f8d7da;    
+    border-color: #dc3545;    
+    color: #721c24;
+}
+
+
+/* Result Screen */
+#result-screen {    
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 130px;
+}
+
+.score-display {    /* You scored _ out of _ */
+    font-size: 1.4rem;
+    margin-bottom: 30px;    
+    color: #555;
+    font-weight: 550;
+}
+
+.score-display span {    /* Highlight score */
+    color: #667eea;    
+    font-size: 1.4rem;
+}
+
+#result-title {    /* Smooth Starter! */ 
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5rem;      
+    color: #018abe;    
+    margin-bottom:10px;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+#result-message {    /* Box: You'll be okay soon */
+    font-size: 1rem;    
+    line-height: 1.5;
+    color: #555;    
+}
