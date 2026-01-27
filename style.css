@@ -61,6 +61,8 @@ body {
 /* Start Screen */
 #start-screen {    
     text-align: center;
+    border-radius: 10px;
+    padding: 50px 130px;
 }
 
 .screen-header .subtitle {   
