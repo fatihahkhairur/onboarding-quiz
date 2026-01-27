@@ -266,36 +266,11 @@ body {
 }
 
 
-/* RESPONSIVE DESIGN */
-@media (max-width:500px){
-    /* when we hit 500px and below, implement the styles below */
-
-    .screen {
-        padding: 1rem;
-    }
-
-    #start-screen h1 {
-        font-size: 2rem;
-    }
-
-    #question-text {
-        font-size: 1.3rem;
-    }
-
-    .answer-btn {
-        padding: 12px;
-    }
-
-    button {
-        padding: 12px 25px;
-        font-size: 1rem;
-    }
-=======
 /* Container & Base Styles */
 
-* {    
-    margin: 0;    
-    padding: 0;    
+* { 
+    margin: 0px;    
+    padding: 0px;    
     box-sizing: border-box;
 }
 
@@ -572,5 +547,4 @@ body {
         padding: 12px 25px;
         font-size: 1rem;
     }
->>>>>>> 5b193b223fd417ee86b2086b24938aa16d6e508c
 }
