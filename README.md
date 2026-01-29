@@ -1,7 +1,10 @@
-# Onboarding Quiz - "What Type of New Hire Are You?"
+# What Type of New Hire Are You?
 
 ## Demo
 Try the live quiz here: [Live Demo](https://fatihahkhairur.github.io/onboarding-quiz/)
+
+## Preview
+<img width="1014" height="899" alt="image" src="https://github.com/user-attachments/assets/079806c8-dd80-4428-bb34-a968a7856fa7" />
 
 ## Description
 This is an interactive onboarding quiz built with **HTML, CSS, and JavaScript**. 
@@ -14,8 +17,3 @@ The quiz demonstrates:
 - Quiz state management (start, quiz, result screens)
 - Event handling for button clicks
 - Responsive and simple UI design
-
-## How to run locally
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/fatihahkhairur/onboarding-quiz.git
