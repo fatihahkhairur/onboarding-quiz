@@ -1,12 +1,10 @@
-# What Type of New Hire Are You?
-
-## Demo
+## What Type of New Hire Are You?
 Try the live quiz here: [Live Demo](https://fatihahkhairur.github.io/onboarding-quiz/)
 
-## Preview
-<img width="1014" height="899" alt="image" src="https://github.com/user-attachments/assets/079806c8-dd80-4428-bb34-a968a7856fa7" />
+### Preview
+<img width="1006" height="900" alt="image" src="https://github.com/user-attachments/assets/ea6009fa-334e-4802-8e4a-8ed04950cdf5" />
 
-## Description
+### Description
 This is an interactive onboarding quiz built with **HTML, CSS, and JavaScript**. 
 It helps simulate a “first week at a new job” scenario and provides feedback based on your answers.
 
